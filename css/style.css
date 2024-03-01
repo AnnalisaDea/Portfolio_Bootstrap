@@ -66,6 +66,17 @@ body {
   color: #6B273F;
 }
 
+#works {
+  width: 300%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+#works .panel {
+  height: 100vh;
+  width: 100vw;
+}
+
 #about #img-about {
   width: 30vw;
   height: 70vh;
