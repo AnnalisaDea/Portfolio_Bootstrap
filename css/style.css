@@ -1,0 +1,94 @@
+/*$secondary-color: darken($background-color, 40%);*/
+body {
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  background-image: url(../img/Tavola\ disegno\ 1.png);
+  background-color: white;
+  background-size: 100% auto;
+  overflow-x: hidden; /*Serve per evitare che si formi la barra di scorrimento orrizontale per l'animazione GSAP*/
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.section-title h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #6B273F;
+}
+
+.customTopnav {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  background-image: url(../img/Tavola\ disegno\ 1.png);
+  background-color: white;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+.customTopnav.hidden {
+  top: -100px;
+  /* Hide navbar by moving it off-screen */
+}
+
+#hero #headline, #works #headline {
+  font-weight: 700;
+  color: #6B273F;
+}
+
+#about #img-about {
+  width: 30vw;
+  height: 70vh;
+  object-fit: cover;
+}
+#about .body-text {
+  text-align: justify;
+}
+
+.skills-box {
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+
+.skills-box:hover {
+  transform: translateY(-10px);
+}
+.skills-box:hover svg {
+  fill: #6B273F;
+}
+.skills-box:hover h1 {
+  color: #6B273F;
+}
+
+footer {
+  background-color: white;
+}
+footer a svg:hover {
+  transform: translateY(-5px);
+  fill: #6B273F;
+}
+
+@media (max-width: 992px) {
+  body {
+    background-color: #EADCE1;
+    background-size: 100% auto;
+  }
+  .customTopnav {
+    background-color: white;
+    background-image: none;
+  }
+  #about #img-about {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center 15%;
+    margin-bottom: 32px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
