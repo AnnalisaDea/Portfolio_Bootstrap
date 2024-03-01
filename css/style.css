@@ -1,4 +1,4 @@
-/*$secondary-color: darken($background-color, 40%);*/
+/*$secondary-color: #6B273F;*/
 html {
   overflow-x: hidden; /*Serve per evitare che si formi la barra di scorrimento orrizontale per l'animazione GSAP*/
 }
@@ -44,7 +44,7 @@ body {
 .section-title h1 {
   font-weight: 800;
   text-transform: uppercase;
-  color: #6B273F;
+  color: #7c4b5c;
 }
 
 .customTopnav {
@@ -66,7 +66,7 @@ body {
 
 #hero #headline, #works #headline {
   font-weight: 700;
-  color: #6B273F;
+  color: #7c4b5c;
 }
 
 #works {
@@ -99,10 +99,10 @@ body {
   transform: translateY(-10px);
 }
 .skills-box:hover svg {
-  fill: #6B273F;
+  fill: #7c4b5c;
 }
 .skills-box:hover h1 {
-  color: #6B273F;
+  color: #7c4b5c;
 }
 
 footer {
@@ -110,7 +110,7 @@ footer {
 }
 footer a svg:hover {
   transform: translateY(-5px);
-  fill: #6B273F;
+  fill: #7c4b5c;
 }
 
 @media (max-width: 992px) {
