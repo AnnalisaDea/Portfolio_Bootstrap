@@ -1,4 +1,30 @@
 /*$secondary-color: darken($background-color, 40%);*/
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #EADCE1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1031;
+}
+#loading img {
+  max-width: 20vh;
+  animation: pulse 0.5s infinite alternate;
+}
+
+/* Animazione di ampliamento */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
 body {
   margin: 0;
   font-family: Raleway, sans-serif;
