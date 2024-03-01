@@ -1,9 +1,11 @@
 let prevScrollpos = window.scrollY;
 const topnav = document.getElementById("topnav");
+const hamburgerButton = document.querySelector("#topnav button");
+const navLinks = document.querySelectorAll(".nav-link");
+const containerLinks = document.querySelector("#topnav .navbar-collapse");
 
 function anim() {
     let sections = gsap.utils.toArray(".panel");
-
 
     gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
@@ -22,6 +24,15 @@ function anim() {
     });
 }
 
+
+function hiddenNavlink() {
+    //quando clicca su un link si chiude la navbar
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+           containerLinks.classList.remove("show");
+        })
+    });
+}
 
 window.addEventListener('load', () => {
     const loadingScreen = document.getElementById("loading");
@@ -45,4 +56,11 @@ window.addEventListener('scroll', () => {
     prevScrollpos = currentScrollPos;
 });
 
-document.addEventListener("DOMContentLoaded", anim)
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    //richiama l'animazione per work    
+    anim();
+
+    //evento click hamburgerButton
+    hamburgerButton.addEventListener("click", hiddenNavlink);
+})
