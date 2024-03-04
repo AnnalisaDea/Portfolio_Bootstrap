@@ -24,7 +24,7 @@ html{
     align-items: center;
 
 
-    z-index: 1031; //fixed-top della navbar di bootstrap mette z-index 1030*/
+    z-index: 4; //fixed-top della navbar mette z-index 3*/
 
 
     img {
@@ -34,7 +34,7 @@ html{
 }
 
 
-/* Animazione di ampliamento */
+/* Animazione */
 @keyframes pulse {
     0% {
         transform: scale(1);

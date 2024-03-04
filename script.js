@@ -2,11 +2,11 @@ let prevScrollpos = window.scrollY;
 const topnav = document.getElementById("topnav");
 const hamburgerButton = document.querySelector("#topnav button");
 const navLinks = document.querySelectorAll(".nav-link");
-const containerLinks = document.querySelector("#topnav .navbar-collapse");
+const containerLinks = document.getElementById("navbarNav");
 
 function anim() {
     let sections = gsap.utils.toArray(".panel");
-
+    
     gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
         ease: "none",
@@ -14,7 +14,7 @@ function anim() {
             trigger: "#works",
             start: "top top",
             pin: true,
-            scrub: 1,
+            scrub: true,
             snap: {
                 snapTo: [0, 0.5, 1],
                 directional: false
@@ -38,7 +38,7 @@ window.addEventListener('load', () => {
     const loadingScreen = document.getElementById("loading");
     setTimeout(function () {
         loadingScreen.style.display = 'none';
-    }, 2000); // Ritardo di 2000 millisecondi (2 second1)
+    }, 2000); // Ritardo di 2000 millisecondi 
 })
 
 window.addEventListener('scroll', () => {
